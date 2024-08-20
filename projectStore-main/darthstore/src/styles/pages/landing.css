@@ -1,0 +1,83 @@
+/*  Estilos para la página de inicio */
+
+/* imagen de landing*/
+.imgBanner{
+    width: 60vw;
+}
+
+.package {
+    width: 80vw;
+    height: 60vh;
+    background-image: linear-gradient(163deg, #ff55ff 0%, #7b267b 100%);
+    border-radius: 40px;
+    text-align: center;
+    transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+  }
+  
+  .package:hover {
+    box-shadow: 0 0 5px #ff00ff, 0 0 20px #ff00ff, 0 0 50px #ff00ff, 0 0 100px #ff00ff;
+  }
+  
+  
+  
+ 
+  
+
+/* Estilos para el texto de la landing */
+
+.tittleLanding{
+    margin-top: 10px;
+    font-family: 'STARWARS', normal;
+    font-size: 2.0Rem;
+    text-align: center;
+}
+
+
+.landingImgDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myWrapper{
+    
+    perspective: 450px;
+}
+
+.landingtextDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    gap: 20px;
+    position: relative;
+}
+
+
+@media (min-width: 769px) {
+    .landingtextDiv {
+        animation: scroll 300s linear forwards;
+    }
+}
+
+/* Sin animación para dispositivos medianos y móviles */
+@media (max-width: 768px) {
+    .landingtextDiv {
+        animation: none; /* Cancela la animación */
+        margin: 20px;
+    }
+}
+
+@keyframes scroll {
+    from {
+        top: 0; 
+        transform: translateZ(0) rotateX(20deg);
+    }
+    to {
+        top:-4500px; 
+        transform: translateZ(-2500px) rotateX(21deg);
+
+    }
+
+}

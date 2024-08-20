@@ -1,0 +1,38 @@
+.myNavbar{
+    margin-top: 5px;
+}
+
+.logo{
+    width: 100px;
+    margin-left: 10px;
+
+}
+.myNavButton{
+    background: none;
+    border: none;
+    padding: 3px;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+.myNavButton:hover {
+  color: #ffffff;
+  background: #0ef;
+  border: 1px solid #0ef;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #0ef, 0 0 20px #0ef, 0 0 50px #0ef, 0 0 100px #0ef;
+  scale: 1.1;
+}
+
+.myNavButton:active {
+    background: none;
+    box-shadow: none;
+  transform: scale(0.8);
+}
+ 
